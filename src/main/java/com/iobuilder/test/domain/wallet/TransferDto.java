@@ -1,4 +1,4 @@
-package com.iobuilder.test.infrastructure.dto;
+package com.iobuilder.test.domain.wallet;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

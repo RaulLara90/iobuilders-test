@@ -6,10 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.UUID;
 
@@ -28,7 +25,9 @@ public class WalletEntity {
             strategy = "org.hibernate.id.UUIDGenerator"
     )
     private UUID id;
+    @Column(name = "owner_id")
     private UUID ownerId;
+    @Column(name = "account_number")
     private String accountNumber;
     private BigDecimal balance;
 }

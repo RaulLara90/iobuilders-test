@@ -1,5 +1,6 @@
 package com.iobuilder.test.domain.wallet.model;
 
+import com.iobuilder.test.domain.movement.model.MovementDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,5 +15,5 @@ import java.util.List;
 @AllArgsConstructor
 public class WalletStatusDto {
     private BigDecimal balance;
-    private List<MovementsDto> movements;
+    private List<MovementDto> movements;
 }
