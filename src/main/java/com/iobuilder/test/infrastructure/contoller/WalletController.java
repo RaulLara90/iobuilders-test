@@ -31,8 +31,7 @@ public interface WalletController {
             @ApiResponse(code = 200, message = "OK", response = WalletDto.class),
             @ApiResponse(code = 500, message = "INTERNAL SERVER ERROR")})
     @GetMapping(value = "/{walletId}",
-            produces = MediaType.APPLICATION_JSON_VALUE,
-            consumes = MediaType.APPLICATION_JSON_VALUE)
+            produces = MediaType.APPLICATION_JSON_VALUE)
     ResponseEntity<WalletStatusDto> getWalletStatus(@PathVariable UUID walletId);
 
     @ApiOperation(value = "Deposit", notes = "", response = WalletDto.class, tags = {})
